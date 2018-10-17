@@ -1,6 +1,6 @@
-require "genpasswd/version"
-
 module Genpasswd
+  VERSION = "0.1.1"
+
   module_function
 
   # generate 6 character set

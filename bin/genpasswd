@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require "genpasswd"
+require 'genpasswd'
 
 puts Genpasswd.make
