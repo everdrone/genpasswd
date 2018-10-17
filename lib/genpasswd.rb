@@ -31,7 +31,7 @@ module Genpasswd
     arr = []
     str = string.downcase
     while arr.length < count
-      arr << rand(str.size -1)
+      arr << rand(str.size - 1)
       arr.uniq!
     end
     arr.each do |i|
@@ -40,11 +40,12 @@ module Genpasswd
     return str
   end
 
-  def prepare(str)
-    arr = str.chars.each_slice(6).map(&:join)
+  def prepare(str, count = 6)
+    arr = str.chars.each_slice(count).map(&:join)
     arr.join('-')
   end
 
+  # TODO: add parameters
   def make
     password = ''
     3.times do
@@ -52,6 +53,6 @@ module Genpasswd
     end
     password = insert_number(password)
     password = insert_capital(password)
-    puts prepare(password)
+    return prepare(password)
   end
 end
