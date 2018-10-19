@@ -16,3 +16,15 @@ brew install genpasswd
 ```
 gem install genpasswd
 ```
+
+# Usage
+
+```bash
+$ genpasswd
+
+pxaryc-Qljy6g-czgfen
+```
+
+## Options
+
+coming soon..
