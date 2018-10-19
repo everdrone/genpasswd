@@ -21,7 +21,6 @@ gem install genpasswd
 
 ```bash
 $ genpasswd
-
 pxaryc-Qljy6g-czgfen
 ```
 
